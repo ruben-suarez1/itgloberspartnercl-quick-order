@@ -10,9 +10,9 @@ const QuickOrder = () => {
   const [getProductData, { data: product }] = useLazyQuery(GET_PRODUCT)
   const [addToCart] = useMutation(UPDATE_CART)
 
-  const handleChange = (evt:any) => {
+  const handleChange = (evt: any) => {
     setInputText(evt.target.value)
-    console.log("estamos buscando", inputText);
+    console.log("estamos buscando", inputText)
   }
 
   const addProductToCart = () => {
@@ -23,9 +23,9 @@ const QuickOrder = () => {
     })
   }
 
-  const searchProduct = (evt:any) => {
+  const searchProduct = (evt: any) => {
     evt.preventDefault();
-    if(!inputText) {
+    if (!inputText) {
       alert("Oiga, ingrese algo")
     } else {
       setSearch(inputText)
@@ -34,15 +34,15 @@ const QuickOrder = () => {
   }
 
   useEffect(() => {
-    console.log(`El resultado de mi producto es${product}`, search);
+    console.log(`El resultado de mi producto es${product}`, search)
 
-    if(!product) {
-      alert('ingrese algo')
+    if (!product) {
+      console.log('ingrese algo')
     } else {
       const skuId = parseInt(inputText)
       console.log("Mis datos necesarios", skuId, product)
 
-      addToCart ({
+      addToCart({
         variables: {
           salesChannel: "1",
           items: [
@@ -54,9 +54,9 @@ const QuickOrder = () => {
           ]
         }
       })
-      .then(() => {
-        window.location.href = "/checkout"
-      })
+        .then(() => {
+          window.location.href = "/checkout"
+        })
     }
   }, [product, search])
 
