@@ -1,0 +1,26 @@
+.quick__name {
+  text-align: center;
+}
+
+.quick__form {
+  margin: 0 auto;
+  align-content: center;
+  width: 500px;
+}
+
+.quick__inputext {
+  margin: 1rem;
+  border-radius: 0.2rem;
+  border: 1px #b3b1b1 solid;
+  padding: 0.5rem;
+}
+
+.quick__input {
+  background-color: #0F3E99;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  width: 500px;
+  border: none;
+  margin-top: 1rem;
+}
