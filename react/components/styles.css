@@ -16,13 +16,18 @@
 }
 
 .quick__input {
-  background-color: #DD0021;
-  color: #fff;
+  background-color: #ffffff;
+  color: #DD0021;
   padding: 0.5rem;
   border-radius: 0.2rem;
   width: 80%;
-  border: none;
+  border: 1px solid #DD0021;
   margin-top: 1rem;
+}
+
+.quick__input:hover {
+  background-color: #DD0021;
+  color: #fff;
 }
 
 @media (max-width: 1024px) {
