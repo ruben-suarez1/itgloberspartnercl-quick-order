@@ -64,7 +64,7 @@ const QuickOrder = () => {
   return <div className={styles["quick__container"]}>
     <h2 className={styles["quick__name"]}>Compra rápida de VTEX U</h2>
     <form onSubmit={searchProduct} className={styles["quick__form"]}>
-      <div className={styles[""]}>
+      <div className={styles["quick__form"]}>
         <label htmlFor="sku" className={styles["quick__label"]}>Ingresa el número de SKU</label>
         <input id="sku" type="text" onChange={handleChange} className={styles["quick__inputext"]}></input>
       </div>

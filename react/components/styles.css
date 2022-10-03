@@ -16,11 +16,34 @@
 }
 
 .quick__input {
-  background-color: #0F3E99;
-  color: #fff;
+  background-color: #ffffff;
+  color: #DD0021;
   padding: 0.5rem;
   border-radius: 0.2rem;
-  width: 500px;
-  border: none;
+  width: 80%;
+  border: 1px solid #DD0021;
   margin-top: 1rem;
+}
+
+.quick__input:hover {
+  background-color: #DD0021;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .quick__input {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .quick__form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .quick__label {
+    width: 80%;
+  }
 }
