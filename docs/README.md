@@ -19,6 +19,7 @@ Input que permitirá una compra rápida en mi sitio VTEX IO
 ### Paso 6 - Ejecute un preview de la tienda
 
 ## Dependencies
+
 1. "vtex.checkout-graphql"
 2. "vtex.search-graphql"
 
