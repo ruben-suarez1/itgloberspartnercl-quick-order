@@ -18,7 +18,7 @@ Input que permitirá una compra rápida en mi sitio VTEX IO
 
 ## Dependencies
 1. "vtex.checkout-graphql"
-2. vtex.search-graphql"
+2. "vtex.search-graphql"
 
 ## Contributors
 
